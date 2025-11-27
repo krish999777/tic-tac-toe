@@ -1,0 +1,29 @@
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(3,200px);
+    grid-template-rows:repeat(3,200px);
+    justify-content:center;
+}
+.box{
+    padding-left:60px;
+    padding-bottom:200px;
+    background-color:antiquewhite;
+    border:2px solid black;
+    font-size:100px;
+}
+.box .hover{
+    color:grey;
+}
+#Last{
+    /* align-items:center;
+    justify-content:center; */
+    text-align:center;
+}
+button{
+    padding:20px 40px;
+    background-color:darkred;
+    color:white;
+    border:2px solid black;
+    border-radius:10px;
+}
