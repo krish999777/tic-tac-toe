@@ -1,10 +1,19 @@
 const boxes=document.getElementsByClassName("box")
 let isGameOver=false
 let count=0
+let canContinue=true
 const end=document.getElementById("End")
 for(let i=0;i<boxes.length;i++)
 {
+
         boxes[i].addEventListener("click",function(){
+        if(boxes[i].textContent){
+            return
+        }
+        if(canContinue==false){
+            return
+        }
+        
         if(count%2===0)
             {
             boxes[i].innerHTML=(`<p class="clicked">X</p>`)
@@ -59,6 +68,7 @@ function checkComplete()
         isGameOver=false
     if(isGameOver){
         end.textContent=`GAME IS OVER \n THE WINNER IS ${winner}`
+        canContinue=false
     }
 }
 const playBtn=document.getElementById("playAgain")
@@ -66,5 +76,6 @@ playBtn.addEventListener("click",function(){
     for(let i=0;i<boxes.length;i++){
         boxes[i].textContent=""
         end.textContent=""
+        canContinue=true
     }
 })

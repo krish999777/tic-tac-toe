@@ -4,6 +4,7 @@
     grid-template-columns:repeat(3,200px);
     grid-template-rows:repeat(3,200px);
     justify-content:center;
+    margin-bottom:20px;
 }
 .box{
     padding-left:60px;
@@ -26,4 +27,10 @@ button{
     color:white;
     border:2px solid black;
     border-radius:10px;
+    font-weight:bold;
+    font-size:xx-large;
+}
+#Last p{
+    font-weight:bold;
+    font-size:xx-large;
 }
