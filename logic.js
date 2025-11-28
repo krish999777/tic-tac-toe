@@ -11,6 +11,7 @@ for(let i=0;i<boxes.length;i++)
             return
         }
         if(canContinue==false){
+            alert("click play again")
             return
         }
         
