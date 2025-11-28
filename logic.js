@@ -75,7 +75,7 @@ const playBtn=document.getElementById("playAgain")
 playBtn.addEventListener("click",function(){
     for(let i=0;i<boxes.length;i++){
         boxes[i].textContent=""
-        end.textContent=""
+        end.innerHTML=""
         canContinue=true
     }
 })
